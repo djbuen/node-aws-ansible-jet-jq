@@ -1,3 +1,3 @@
 FROM node:5
 
-apt-get update && apt-get install awscli -y
+RUN apt-get update && apt-get install awscli -y
