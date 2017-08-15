@@ -1,1 +1,1 @@
-# node-aws
+# node v.5 and awscli tools
