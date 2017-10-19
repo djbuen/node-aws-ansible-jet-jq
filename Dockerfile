@@ -1,7 +1,7 @@
 FROM node:6.2.2
 
 RUN apt-get update && apt-get install awscli -y
-RUN apt-get install ansible -y
+RUN apt-get install software-properties-common -y && apt-add-repository ppa:ansible/ansible && apt-get update && apt-get install ansible -y
 RUN curl -SLO "https://s3.amazonaws.com/codeship-jet-releases/1.19.3/jet-linux_amd64_1.19.3.tar.gz"
 RUN tar -xaC /usr/local/bin -f jet-linux_amd64_1.19.3.tar.gz
 RUN chmod +x /usr/local/bin/jet
