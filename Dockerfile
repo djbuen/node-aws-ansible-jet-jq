@@ -15,3 +15,7 @@ RUN chmod +x /usr/local/bin/jet
 RUN wget http://stedolan.github.io/jq/download/linux64/jq
 RUN chmod +x ./jq
 RUN cp jq /usr/bin
+
+RUN yum remove git -y
+RUN yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm -y
+RUN yum install git -y
