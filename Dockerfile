@@ -15,3 +15,5 @@ RUN chmod +x /usr/local/bin/jet
 RUN wget http://stedolan.github.io/jq/download/linux64/jq
 RUN chmod +x ./jq
 RUN cp jq /usr/bin
+RUN npm install phantomjs -g
+RUN npm install gulp
