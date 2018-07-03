@@ -17,3 +17,5 @@ RUN chmod +x ./jq
 RUN cp jq /usr/bin
 RUN npm install phantomjs -g
 RUN npm install gulp
+RUN apt-get upgrade
+RUN apt-get install gdebi
