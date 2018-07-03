@@ -19,3 +19,5 @@ RUN npm install phantomjs -g
 RUN npm install gulp
 RUN apt-get upgrade
 RUN apt-get install gdebi
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN gdebi google-chrome-stable_current_amd64.deb
